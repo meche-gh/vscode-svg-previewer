@@ -3,8 +3,8 @@
     "displayName": "SVG Previewer",
     "description": "Show SVG preview to the side panel",
     "version": "0.7.0",
-    "publisher": "vitaliymaz",
-    "repository": "https://github.com/vitaliymaz/vscode-svg-previewer",
+    "publisher": "vsce-toolroom",
+    "repository": "https://github.com/vsce-toolroom/vscode-svg-previewer",
     "icon": "logo.png",
     "engines": {
         "vscode": "^1.52.0"
@@ -14,8 +14,14 @@
     ],
     "activationEvents": [
         "onLanguage:xml",
+        "onLanguage:svg",
         "onWebviewPanel:svg-preview",
-        "onCustomEditor:svgPreviewer.customEditor"
+        "onCustomEditor:svgPreviewer.customEditor",
+        "onCommand:vscode.openWith",
+        "onCommand:svg.showPreview",
+        "onCommand:svg.showPreviewToSide",
+        "onCommand:svg.showSource",
+        "workspaceContains:**/*.svg"
     ],
     "main": "./out/extension",
     "contributes": {
@@ -60,7 +66,7 @@
             "editor/title": [
                 {
                     "command": "svg.showPreviewToSide",
-                    "when": "editorLangId == xml",
+                    "when": "resourceExtname == .svg",
                     "alt": "svg.showPreviewToSide",
                     "group": "navigation"
                 },
@@ -74,12 +80,12 @@
             "commandPalette": [
                 {
                     "command": "svg.showPreview",
-                    "when": "editorLangId == xml",
+                    "when": "resourceExtname == .svg",
                     "group": "navigation"
                 },
                 {
                     "command": "svg.showPreviewToSide",
-                    "when": "editorLangId == xml",
+                    "when": "resourceExtname == .svg",
                     "group": "navigation"
                 },
                 {
@@ -92,7 +98,7 @@
                 {
                     "command": "svg.showPreview",
                     "group": "navigation",
-                    "when": "resourceLangId == xml"
+                    "when": "resourceExtname == .svg"
                 }
             ]
         },
@@ -122,13 +128,13 @@
                 "command": "svg.showPreview",
                 "key": "shift+ctrl+v",
                 "mac": "shift+cmd+v",
-                "when": "editorLangId == xml"
+                "when": "resourceExtname == .svg"
             },
             {
                 "command": "svg.showPreviewToSide",
                 "key": "ctrl+k v",
                 "mac": "cmd+k v",
-                "when": "editorLangId == xml"
+                "when": "resourceExtname == .svg"
             }
         ]
     },
