@@ -1,8 +1,8 @@
 # SVG Previewer
 
-[![](https://vsmarketplacebadge.apphb.com/version/vitaliymaz.vscode-svg-previewer.svg)](https://marketplace.visualstudio.com/items?itemName=vitaliymaz.vscode-svg-previewer)
-[![](https://vsmarketplacebadge.apphb.com/downloads/vitaliymaz.vscode-svg-previewer.svg)](https://marketplace.visualstudio.com/items?itemName=vitaliymaz.vscode-svg-previewer)
-[![](https://vsmarketplacebadge.apphb.com/rating/vitaliymaz.vscode-svg-previewer.svg)](https://marketplace.visualstudio.com/items?itemName=vitaliymaz.vscode-svg-previewer)
+[![](https://vsmarketplacebadges.dev/version/vsce-toolroom.vscode-svg-previewer.svg)](https://marketplace.visualstudio.com/items?itemName=vsce-toolroom.vscode-svg-previewer)
+[![](https://vsmarketplacebadges.dev/downloads/vsce-toolroom.vscode-svg-previewer.svg)](https://marketplace.visualstudio.com/items?itemName=vsce-toolroom.vscode-svg-previewer)
+[![](https://vsmarketplacebadges.dev/rating/vsce-toolroom.vscode-svg-previewer.svg)](https://marketplace.visualstudio.com/items?itemName=vsce-toolroom.vscode-svg-previewer)
 
 ![Workflow](media/preview.gif)
 
