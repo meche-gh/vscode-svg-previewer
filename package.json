@@ -2,7 +2,7 @@
     "name": "vscode-svg-previewer-toolroom",
     "displayName": "SVG Previewer (Toolroom)",
     "description": "Show SVG preview to the side panel",
-    "version": "0.7.0",
+    "version": "0.8.0",
     "publisher": "vsce-toolroom",
     "repository": "https://github.com/vsce-toolroom/vscode-svg-previewer",
     "icon": "logo.png",
